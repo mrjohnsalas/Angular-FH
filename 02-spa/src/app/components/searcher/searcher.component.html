@@ -1,0 +1,10 @@
+<h1>Buscando: <small>{{ searchText }}</small></h1>
+<hr>
+<div class="row animated fadeIn fast" *ngIf="heroes.length === 0">
+    <div class="col-md-12">
+        <div class="alert alert-info">No existen resultados con el término: {{ searchText }}</div>
+    </div>
+</div>
+<div class="card-columns">
+    <app-card-heroe *ngFor="let heroe of heroes; let i = index" [heroe]="heroe" [index]="i"></app-card-heroe>
+</div>

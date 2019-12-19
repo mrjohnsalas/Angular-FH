@@ -1,0 +1,43 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Variable</th>
+        <th>Pipe</th>
+        <th>Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> {{ nombre }} </td>
+        <td> uppercase </td>
+        <td> {{ nombre | uppercase }} </td>
+      </tr>
+      <tr>
+        <td> {{ nombre }} </td>
+        <td> lowercase </td>
+        <td> {{ nombre | lowercase }} </td>
+      </tr>
+      <tr>
+        <td> {{ nombre }} </td>
+        <td> slice:3 </td>
+        <td> {{ nombre | slice:3 }} </td>
+      </tr>
+      <tr>
+        <td> {{ nombre }} </td>
+        <td> slice:0:3 </td>
+        <td> {{ nombre | slice:0:3 }} </td>
+      </tr>
+      <tr>
+        <td> {{ pi }} </td>
+        <td> number </td>
+        <td> {{ pi | number }} </td>
+      </tr>
+      <tr>
+        <td> {{ pi }} </td>
+        <td> number </td>
+        <td> {{ pi | number:'1.2-2' }} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
